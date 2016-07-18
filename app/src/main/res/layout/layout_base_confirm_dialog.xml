@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    android:background="@drawable/shape_white_corners"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_confirm_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="提示"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="添加一个灵感集"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <!-- confirm content section -->
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_confirm_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="您确定要取消该订单吗?"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_confirm_content_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="¥:8099.89"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_addbookname"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/addbook_btn_shape"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <View style="@style/list_cell_divider_horizontal" />
+
+    <!-- confirm button section -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_confirm_cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="取消"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/divider_vertical"
+            style="@style/list_cell_divider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_confirm_ok"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="确定"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

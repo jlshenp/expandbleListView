@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_sub_liantong"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" >
+
+    <!-- 填充item_liantong.xml的布局 -->
+    <TextView
+        style="@style/liantong"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/liantong_name"
+        android:layout_marginLeft="10dp"
+        tools:text="i点点包月" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/liantong"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="资费：" />
+
+        <TextView
+            android:id="@+id/liantong_zifei"
+            style="@style/liantong"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView1"
+            tools:text="9" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/liantong"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/liantong_zifei"
+            android:text="元/月" />
+
+        <TextView
+            android:id="@+id/liantong_button"
+            style="@style/liantong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border_pay_refund"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="订购" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/liantong_context"
+        android:text="产品内容：享受6g/月定向流量随心观看最新直播月定向流量随心观看最新直播月定向流量随心观看最新直播月定向流量随心观看最新直播" />
+
+</LinearLayout>

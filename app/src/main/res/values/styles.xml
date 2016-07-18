@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="liantong" parent="android:Widget.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="YxDialog.Alert" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/bg_alert_dialog</item>
+        <item name="android:windowBackground">@drawable/bg_alert_dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--如果要设置从下往上显示，打开这个注释-->
+        <!--<item name="android:windowAnimationStyle">@style/YxAlertDialogAnimation</item>-->
+    </style>
+
+    <!-- 从下往上-->
+    <!--<style name="YxAlertDialogAnimation" parent="@android:style/Animation.Dialog">-->
+        <!--<item name="android:windowEnterAnimation">@anim/anim_dialog_in_from_bottom</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/anim_dialog_out_to_bottom</item>-->
+    <!--</style>-->
+
+    <style name="list_cell_divider_horizontal">
+        <item name="android:background">#d8d8d8</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="list_cell_divider_vertical">
+        <item name="android:background">#d8d8d8</item>
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="dialog_window_anim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+</resources>

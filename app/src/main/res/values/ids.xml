@@ -1,0 +1,4 @@
+<resources>
+    <!--指定id，用于绑定ListView的view-->
+    <item type="id" name="itemType"/>
+</resources>
